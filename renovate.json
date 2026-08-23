@@ -18,5 +18,14 @@
       ],
       "extractVersionTemplate": "^v?(?<version>.*)$"
     }
-  ]
+  ],
+  "customDatasources": {
+    "qoder-cli-cn": {
+      "defaultRegistryUrlTemplate": "https://static.qoder.com.cn/qoder-cli-cn/channels/manifest.json",
+      "format": "json",
+      "transformTemplates": [
+        "{\"releases\":[{\"version\": latest}]}"
+      ]
+    }
+  }
 }
